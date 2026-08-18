@@ -1,0 +1,31 @@
+/* ==========================================================
+   THEME
+   Design tokens only. Swap these to re-skin the whole site
+   without touching layout or component rules in styles.css.
+   ========================================================== */
+:root{
+  /* ---- color: topographic / elevation palette ---- */
+  --bg:            #0a0d0b;   /* page background */
+  --bg-panel:      #10140f;   /* section-alt / card background */
+  --bg-panel-2:    #141813;   /* nested panel background */
+  --contour:       #2e3d33;   /* contour line, default */
+  --contour-soft:  #223028;   /* contour line, dimmer pass */
+  --accent:        #c98a4b;   /* elevation amber — primary accent */
+  --accent-dim:    #8a5f34;   /* amber, muted (borders/dividers) */
+  --sage:          #7fa08e;   /* secondary accent (eyebrows, coords) */
+  --paper:         #eee6d6;   /* headings / high-contrast text */
+  --text:          #c7c2b2;   /* body text */
+  --text-dim:      #83816f;   /* secondary / muted text */
+  --line:          #22271f;   /* hairline borders & dividers */
+
+  /* ---- type ---- */
+  --font-display: 'Space Grotesk', sans-serif;
+  --font-body:    'IBM Plex Sans', sans-serif;
+  --font-mono:    'IBM Plex Mono', monospace;
+
+  /* ---- layout ---- */
+  --max: 1180px;
+  --gutter-lg: 10rem;
+  --gutter-md: 5rem;
+  --gutter-sm: 2.4rem;
+}

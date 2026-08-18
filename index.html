@@ -1,276 +1,210 @@
-<!-- 
-  Hello 😊.
-
-  This template is designed and developed by Nisar Hassan Naqvi
-  for anyone to use for free or customize the way they like.
-
-  Github Repo: https://github.com/nisarhassan12/portfolio-template/
-  My Website: https://nisar.dev
-
-  For business & inquires, contact me => syednisarhassan12@gmail.com
--->
-
-<!--
-  Follow the instructions written in comments to create your stunning portfolio
--->
-
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="shortcut icon" type="image/png" href="./images/favicon.png" />
-
-  <!-- Put your site title here -->
-  <title>
-    Nagy Tamás | A Software Engineer based in Budapest, Hungary.
-  </title>
-
-  <meta name="description" content="Software Engineer and aspiring Game Developer with a strong interest in 3D design, game development, interactive experiences, and digital creativity. I enjoy turning ideas into functional and visually engaging experiences.">
-  <!-- Add some coding keywords below, Ex: (React, CSS etc) -->
-  <meta name="keywords" content="Nagy Tamás, Java, C, C++, Python, JavaScript, TypeScript, SQL, C#, React, TypeScript, JavaScript, HTML5, CSS3, Vite, Node.js, REST APIs, Responsive Design, Object-Oriented Programming, Data Structures & Algorithms, Clean Code, Software Architecture, Debugging, Database Design, API Development, Git, GitHub, npm, Game Development, 3D Design, 3D Modeling, Game Design, Gameplay Programming, 3D Environments, Unreal Engine, UI Design, UX Design, 3D Visualization, Digital Design, Interactive Design" />
-  <link rel="stylesheet" href="index.css" />
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Nagy Tamás — Software Engineer &amp; Game Developer, Budapest</title>
+<meta name="description" content="Software Engineer and aspiring Game Developer based in Budapest, focused on procedural systems, 3D design, and interactive experiences." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/theme.css">
+<link rel="stylesheet" href="css/styles.css">
 </head>
-
 <body>
 
-  <!-- ***** Header ***** -->
+<nav class="nav" id="nav">
+  <a href="#top" class="nav__mark">
+    <span class="dot"></span>
+    <span class="text">N. TAMÁS</span>
+  </a>
+  <ul class="nav__items">
+    <li><a href="#work" class="nav__link">Work</a></li>
+    <li><a href="#about" class="nav__link">About</a></li>
+    <li><a href="#contact" class="nav__link">Contact</a></li>
+  </ul>
+</nav>
 
-  <header class="header" role="banner" id="top">
-    <div class="row">
-      <nav class="nav" role="navigation">
-        <ul class="nav__items">
-          <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
-          <li class="nav__item"><a href="#clients" class="nav__link">Clients</a></li>
-          <li class="nav__item">
-            <a href="#about" class="nav__link">About</a>
-          </li>
-          <li class="nav__item">
-            <a href="#contact" class="nav__link">Contact</a>
-          </li>
-        </ul>
-      </nav>
+<header class="hero" id="top">
+  <svg class="hero__contours" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+    <path class="draw" d="M 1100.3,480.0 C 1101.9,483.2 1103.7,486.7 1104.0,490.1 C 1104.2,493.5 1103.5,497.0 1101.9,500.2 C 1100.2,503.4 1097.4,506.6 1094.2,509.3 C 1091.0,512.1 1086.8,514.6 1082.7,516.8 C 1078.6,519.0 1073.8,520.8 1069.4,522.5 C 1064.9,524.2 1060.3,525.6 1055.9,527.1 C 1051.6,528.5 1047.4,529.8 1043.2,531.1 C 1039.1,532.4 1035.2,533.7 1031.2,534.9 C 1027.1,536.2 1023.2,537.4 1019.1,538.5 C 1015.0,539.6 1010.8,540.6 1006.5,541.4 C 1002.3,542.2 997.8,542.8 993.4,543.2 C 989.0,543.6 984.5,543.7 980.0,543.7 C 975.5,543.8 971.0,543.6 966.5,543.4 C 962.0,543.2 957.6,542.9 952.9,542.6 C 948.3,542.4 943.6,542.1 938.8,541.7 C 933.9,541.3 928.9,541.0 923.7,540.4 C 918.6,539.8 913.2,539.2 908.1,538.1 C 902.9,537.0 897.6,535.7 893.0,534.0 C 888.3,532.2 883.8,530.0 880.2,527.5 C 876.7,524.9 873.7,521.9 871.8,518.7 C 869.9,515.6 868.9,512.0 868.7,508.6 C 868.4,505.2 869.3,501.5 870.5,498.2 C 871.6,494.9 873.6,491.6 875.4,488.5 C 877.2,485.5 879.5,482.7 881.2,480.0 C 883.0,477.3 884.6,474.8 885.8,472.3 C 887.0,469.8 887.8,467.4 888.4,464.8 C 889.0,462.2 889.2,459.6 889.6,456.8 C 890.0,454.0 890.2,451.1 891.0,448.1 C 891.8,445.2 892.7,442.1 894.3,439.2 C 895.9,436.3 898.0,433.4 900.6,430.8 C 903.2,428.2 906.5,425.7 910.0,423.5 C 913.6,421.3 917.7,419.3 921.9,417.6 C 926.1,415.9 930.7,414.5 935.4,413.2 C 940.0,411.9 944.8,410.8 949.7,409.9 C 954.6,408.9 959.6,408.1 964.6,407.5 C 969.7,407.0 974.9,406.6 980.0,406.5 C 985.1,406.5 990.4,406.6 995.4,407.3 C 1000.5,407.9 1005.5,408.9 1010.1,410.3 C 1014.7,411.7 1019.1,413.6 1023.0,415.7 C 1026.9,417.7 1030.3,420.3 1033.3,422.8 C 1036.3,425.3 1038.7,428.1 1041.1,430.6 C 1043.5,433.2 1045.3,435.8 1047.5,438.1 C 1049.7,440.5 1051.7,442.7 1054.2,444.7 C 1056.7,446.8 1059.4,448.6 1062.5,450.5 C 1065.6,452.4 1069.3,454.1 1072.9,456.1 C 1076.6,458.2 1080.8,460.2 1084.4,462.7 C 1088.1,465.1 1092.2,467.7 1094.8,470.6 C 1097.5,473.5 1098.8,476.8 1100.3,480.0 Z" />
+    <path class="draw strong" d="M 1225.9,480.0 C 1224.8,486.6 1221.2,493.2 1217.3,499.4 C 1213.4,505.5 1208.0,511.4 1202.5,517.0 C 1197.1,522.5 1190.7,527.6 1184.6,532.6 C 1178.6,537.5 1172.2,542.1 1166.1,546.6 C 1160.0,551.2 1153.9,555.5 1147.8,559.8 C 1141.7,564.2 1135.8,568.5 1129.4,572.6 C 1123.1,576.8 1116.7,581.0 1109.7,584.8 C 1102.7,588.6 1095.4,592.4 1087.7,595.6 C 1079.9,598.9 1071.7,601.9 1063.2,604.5 C 1054.7,607.1 1045.7,609.2 1036.6,611.1 C 1027.6,612.9 1018.2,614.4 1008.8,615.6 C 999.4,616.8 989.8,617.8 980.0,618.5 C 970.2,619.3 960.3,619.9 950.2,620.2 C 940.1,620.4 929.8,620.6 919.4,620.1 C 909.1,619.7 898.4,619.0 888.2,617.5 C 877.9,615.9 867.5,613.9 858.0,611.1 C 848.5,608.2 839.1,604.5 831.2,600.3 C 823.2,596.0 816.0,590.8 810.1,585.3 C 804.3,579.9 799.7,573.6 796.0,567.5 C 792.4,561.4 790.2,554.8 788.3,548.6 C 786.4,542.4 785.8,536.1 784.8,530.1 C 783.8,524.2 783.4,518.4 782.5,512.8 C 781.6,507.2 780.6,501.9 779.2,496.4 C 777.8,490.9 776.0,485.6 774.3,480.0 C 772.6,474.4 770.4,468.7 769.1,462.8 C 767.8,456.9 766.4,450.7 766.3,444.5 C 766.2,438.3 766.7,431.9 768.5,425.7 C 770.3,419.5 773.2,413.2 777.2,407.4 C 781.1,401.6 786.4,395.9 792.3,390.7 C 798.2,385.5 805.3,380.7 812.7,376.2 C 820.0,371.8 828.2,367.8 836.6,364.1 C 844.9,360.4 853.7,357.1 862.7,354.0 C 871.7,351.0 881.0,348.3 890.5,346.0 C 900.0,343.7 909.8,341.7 919.7,340.4 C 929.5,339.0 939.8,338.1 949.8,337.8 C 959.9,337.6 970.1,337.9 980.0,338.9 C 989.9,339.9 999.7,341.7 1008.9,343.8 C 1018.2,345.9 1027.1,348.7 1035.5,351.6 C 1043.9,354.4 1051.8,357.8 1059.6,360.9 C 1067.3,364.0 1074.6,367.3 1082.1,370.3 C 1089.6,373.4 1097.0,376.3 1104.8,379.2 C 1112.5,382.1 1120.6,384.7 1128.9,387.7 C 1137.1,390.7 1146.0,393.5 1154.5,397.0 C 1162.9,400.5 1171.9,404.1 1179.8,408.5 C 1187.7,412.8 1195.6,417.7 1201.9,423.0 C 1208.1,428.4 1213.6,434.4 1217.4,440.6 C 1221.1,446.7 1222.8,453.5 1224.2,460.1 C 1225.7,466.6 1227.1,473.4 1225.9,480.0 Z" />
+    <path class="draw" d="M 1282.9,480.0 C 1280.3,488.1 1274.5,496.1 1269.4,503.6 C 1264.3,511.2 1258.2,518.3 1252.3,525.2 C 1246.4,532.2 1240.3,538.7 1234.2,545.3 C 1228.2,551.8 1222.2,558.2 1216.1,564.5 C 1209.9,570.8 1203.8,577.1 1197.1,583.3 C 1190.4,589.4 1183.5,595.6 1175.7,601.4 C 1168.0,607.1 1159.7,612.8 1150.7,618.0 C 1141.7,623.1 1132.0,627.9 1121.7,632.2 C 1111.5,636.5 1100.6,640.3 1089.4,643.7 C 1078.2,647.1 1066.5,650.0 1054.6,652.5 C 1042.7,655.1 1030.5,657.3 1018.0,659.2 C 1005.6,661.0 992.9,662.7 980.0,663.8 C 967.1,664.9 953.8,665.8 940.5,665.9 C 927.2,666.0 913.5,665.8 900.3,664.5 C 887.0,663.2 873.5,661.2 861.0,658.2 C 848.4,655.2 836.1,651.2 825.1,646.3 C 814.1,641.5 804.0,635.6 795.2,629.3 C 786.5,623.0 779.0,615.7 772.6,608.6 C 766.2,601.4 761.4,593.6 756.8,586.2 C 752.3,578.8 749.0,571.2 745.4,564.0 C 741.8,556.8 738.8,549.8 735.3,542.8 C 731.8,535.9 728.2,529.3 724.3,522.5 C 720.4,515.6 716.1,508.9 712.1,501.9 C 708.1,494.8 703.8,487.6 700.5,480.0 C 697.3,472.4 694.2,464.5 692.7,456.6 C 691.3,448.6 690.7,440.2 691.8,432.1 C 693.0,424.0 695.6,415.8 699.5,408.0 C 703.5,400.2 709.2,392.5 715.7,385.4 C 722.2,378.3 730.2,371.5 738.7,365.2 C 747.2,358.9 756.7,353.1 766.5,347.6 C 776.3,342.2 786.8,337.2 797.5,332.6 C 808.3,327.9 819.4,323.7 830.9,319.9 C 842.4,316.2 854.3,312.8 866.5,310.1 C 878.7,307.5 891.3,305.3 903.9,304.0 C 916.5,302.6 929.5,302.0 942.2,302.1 C 954.9,302.2 967.7,303.2 980.0,304.6 C 992.3,306.0 1004.3,308.3 1016.0,310.6 C 1027.6,312.9 1038.7,315.8 1049.8,318.5 C 1060.8,321.3 1071.4,324.2 1082.2,327.0 C 1093.1,329.7 1103.8,332.4 1114.9,335.1 C 1126.0,337.9 1137.4,340.4 1149.0,343.5 C 1160.5,346.5 1172.7,349.5 1184.3,353.3 C 1195.9,357.2 1208.0,361.3 1218.8,366.4 C 1229.5,371.5 1240.2,377.3 1248.9,383.7 C 1257.6,390.2 1265.4,397.6 1271.1,405.2 C 1276.8,412.9 1280.8,421.3 1283.1,429.6 C 1285.4,438.0 1284.9,446.7 1284.9,455.1 C 1284.8,463.5 1285.4,471.9 1282.9,480.0 Z" />
+    <path class="draw peak-mark" d="M 1337.2,480.0 C 1334.1,489.6 1328.3,498.9 1323.5,508.0 C 1318.7,517.1 1313.6,525.9 1308.5,534.6 C 1303.4,543.3 1298.5,551.8 1293.0,560.4 C 1287.6,568.9 1282.2,577.5 1275.8,585.9 C 1269.5,594.3 1262.8,602.7 1254.9,610.8 C 1247.0,618.8 1238.3,626.8 1228.6,634.1 C 1218.9,641.5 1208.0,648.5 1196.5,654.9 C 1184.9,661.3 1172.3,667.2 1159.3,672.5 C 1146.2,677.9 1132.4,682.6 1118.3,687.0 C 1104.1,691.3 1089.4,695.1 1074.5,698.5 C 1059.5,702.0 1044.0,705.0 1028.3,707.4 C 1012.5,709.8 996.3,711.8 980.0,712.9 C 963.7,714.0 946.8,714.5 930.3,713.9 C 913.9,713.2 897.0,711.6 881.1,708.8 C 865.2,706.0 849.4,702.0 835.0,697.0 C 820.6,692.1 806.9,685.7 794.7,679.0 C 782.5,672.2 771.6,664.2 761.8,656.3 C 751.9,648.4 743.6,639.8 735.6,631.5 C 727.6,623.3 720.9,614.8 713.9,606.6 C 706.8,598.5 700.4,590.5 693.5,582.6 C 686.6,574.6 679.6,567.0 672.4,559.0 C 665.3,551.0 657.6,543.1 650.6,534.7 C 643.6,526.3 636.2,517.7 630.4,508.5 C 624.6,499.4 619.0,489.8 615.6,480.0 C 612.1,470.2 609.9,459.9 609.7,449.8 C 609.5,439.7 611.2,429.2 614.7,419.3 C 618.1,409.4 623.6,399.5 630.2,390.2 C 636.8,380.9 645.3,371.9 654.3,363.4 C 663.4,355.0 673.8,347.0 684.6,339.5 C 695.4,331.9 707.1,324.9 719.1,318.2 C 731.2,311.6 743.8,305.4 757.0,299.8 C 770.1,294.2 783.8,288.9 798.0,284.5 C 812.1,280.1 826.9,276.3 841.9,273.3 C 856.9,270.4 872.5,268.3 887.9,267.0 C 903.3,265.6 919.1,265.3 934.4,265.4 C 949.8,265.6 965.1,266.7 980.0,267.9 C 994.9,269.2 1009.5,271.1 1024.0,272.9 C 1038.5,274.7 1052.6,276.7 1067.0,278.7 C 1081.4,280.7 1095.7,282.6 1110.5,284.7 C 1125.2,286.9 1140.3,288.9 1155.5,291.6 C 1170.7,294.3 1186.4,297.1 1201.6,301.0 C 1216.8,304.8 1232.3,309.2 1246.4,314.8 C 1260.5,320.4 1274.4,326.9 1286.1,334.4 C 1297.9,341.8 1308.5,350.4 1316.8,359.5 C 1325.0,368.5 1331.4,378.6 1335.9,388.6 C 1340.3,398.6 1342.5,409.3 1343.5,419.6 C 1344.6,429.9 1343.1,440.4 1342.0,450.4 C 1341.0,460.5 1340.3,470.4 1337.2,480.0 Z" />
+
+    <path class="draw" d="M 424.0,260.0 C 422.7,262.2 419.6,264.4 417.1,266.3 C 414.6,268.2 411.5,269.8 409.1,271.5 C 406.7,273.1 404.5,274.5 402.7,276.1 C 400.9,277.7 399.7,279.2 398.4,280.9 C 397.0,282.5 396.1,284.3 394.7,286.0 C 393.3,287.7 391.9,289.5 390.1,291.1 C 388.3,292.6 386.2,294.1 384.0,295.5 C 381.7,296.9 379.3,298.2 376.8,299.5 C 374.3,300.9 371.8,302.2 369.1,303.6 C 366.4,304.9 363.7,306.5 360.7,307.8 C 357.6,309.1 354.4,310.6 350.9,311.4 C 347.5,312.3 343.6,312.9 340.0,312.8 C 336.4,312.8 332.5,312.1 329.2,310.9 C 325.9,309.8 322.8,307.8 320.2,305.9 C 317.5,304.1 315.5,301.6 313.5,299.7 C 311.5,297.8 310.0,295.8 308.0,294.4 C 306.0,292.9 304.1,291.9 301.5,291.1 C 298.9,290.3 295.8,290.0 292.6,289.4 C 289.3,288.8 285.4,288.5 282.0,287.6 C 278.5,286.8 274.8,285.7 272.0,284.3 C 269.1,283.0 266.6,281.2 264.9,279.3 C 263.1,277.4 262.0,275.2 261.2,273.1 C 260.5,271.0 260.3,268.7 260.2,266.5 C 260.0,264.3 260.2,262.1 260.4,260.0 C 260.7,257.9 261.0,255.7 261.8,253.6 C 262.7,251.6 263.7,249.5 265.3,247.6 C 266.9,245.7 269.1,243.9 271.6,242.4 C 274.0,240.9 277.1,239.7 279.9,238.5 C 282.7,237.3 285.8,236.5 288.2,235.4 C 290.7,234.3 292.8,233.3 294.6,231.9 C 296.4,230.4 297.5,228.8 298.9,226.8 C 300.3,224.8 301.2,222.3 302.8,220.1 C 304.5,217.8 306.3,215.2 308.7,213.2 C 311.2,211.3 314.4,209.4 317.7,208.4 C 321.0,207.4 325.1,207.0 328.8,207.1 C 332.5,207.3 336.5,208.3 340.0,209.3 C 343.5,210.3 346.9,211.9 349.9,213.2 C 353.0,214.5 355.8,215.9 358.6,217.0 C 361.4,218.2 364.0,219.1 366.7,220.1 C 369.4,221.0 372.1,221.8 374.7,222.7 C 377.4,223.6 380.0,224.6 382.4,225.7 C 384.9,226.8 387.1,228.1 389.3,229.4 C 391.5,230.7 393.4,232.2 395.6,233.6 C 397.8,234.9 399.9,236.3 402.3,237.7 C 404.8,239.1 407.6,240.4 410.4,241.9 C 413.1,243.5 416.4,245.1 418.8,246.9 C 421.2,248.8 424.1,250.9 425.0,253.1 C 425.9,255.2 425.3,257.8 424.0,260.0 Z" />
+    <path class="draw strong" d="M 453.6,260.0 C 450.5,263.1 448.1,265.9 445.9,268.6 C 443.8,271.4 442.1,274.0 440.7,276.7 C 439.3,279.5 438.7,282.2 437.7,285.1 C 436.6,287.9 435.9,290.9 434.5,293.8 C 433.0,296.7 431.3,299.6 429.0,302.3 C 426.7,305.1 423.9,307.6 420.8,310.1 C 417.8,312.6 414.3,314.8 410.7,317.2 C 407.2,319.5 403.5,321.7 399.6,323.9 C 395.6,326.2 391.5,328.5 387.0,330.4 C 382.5,332.3 377.7,334.2 372.6,335.4 C 367.5,336.5 361.8,337.2 356.4,337.1 C 350.9,336.9 345.2,336.0 340.0,334.6 C 334.8,333.2 329.9,330.9 325.4,328.9 C 320.9,326.8 317.0,324.2 313.1,322.3 C 309.1,320.4 305.7,318.7 301.6,317.4 C 297.6,316.2 293.5,315.6 288.8,315.0 C 284.1,314.4 278.8,314.3 273.5,313.7 C 268.2,313.1 262.3,312.6 257.1,311.4 C 251.9,310.2 246.7,308.5 242.5,306.4 C 238.4,304.2 234.8,301.5 232.1,298.6 C 229.4,295.7 227.7,292.4 226.3,289.2 C 224.8,286.0 224.1,282.6 223.5,279.4 C 222.9,276.1 222.5,272.8 222.4,269.6 C 222.3,266.4 222.3,263.1 223.0,260.0 C 223.6,256.9 224.6,253.7 226.3,250.7 C 228.0,247.8 230.5,244.9 233.1,242.2 C 235.7,239.6 239.2,237.2 242.1,234.9 C 245.1,232.5 248.3,230.5 250.8,228.1 C 253.4,225.7 255.4,223.4 257.3,220.7 C 259.1,217.9 260.2,214.8 261.9,211.6 C 263.6,208.4 264.9,204.6 267.4,201.3 C 269.8,198.0 272.7,194.5 276.6,191.9 C 280.4,189.3 285.3,187.1 290.4,185.8 C 295.5,184.5 301.6,184.1 307.3,184.3 C 312.9,184.4 318.9,185.5 324.4,186.5 C 329.9,187.5 335.1,189.2 340.0,190.4 C 344.9,191.6 349.5,192.8 354.1,193.7 C 358.7,194.7 363.1,195.3 367.6,196.1 C 372.2,196.8 376.8,197.3 381.3,198.2 C 385.8,199.1 390.3,200.1 394.6,201.3 C 399.0,202.6 403.1,204.1 407.1,205.8 C 411.2,207.4 415.0,209.2 419.0,211.0 C 423.0,212.9 426.9,214.7 431.1,216.7 C 435.3,218.6 439.8,220.5 443.9,222.8 C 448.0,225.1 452.5,227.5 455.8,230.3 C 459.1,233.0 462.2,236.2 463.7,239.5 C 465.2,242.7 466.3,246.4 464.6,249.8 C 463.0,253.3 456.7,256.9 453.6,260.0 Z" />
+    <path class="draw" d="M 486.8,260.0 C 484.9,264.1 485.5,267.8 485.3,271.9 C 485.1,275.9 485.7,280.0 485.5,284.2 C 485.3,288.4 485.2,292.8 484.1,297.0 C 482.9,301.2 481.1,305.6 478.6,309.6 C 476.0,313.7 472.6,317.6 468.8,321.3 C 465.1,325.0 460.8,328.6 456.2,332.1 C 451.7,335.6 446.9,339.0 441.8,342.2 C 436.6,345.4 431.1,348.7 425.1,351.4 C 419.1,354.1 412.5,356.6 405.6,358.2 C 398.7,359.8 391.0,360.8 383.6,360.9 C 376.2,361.0 368.3,360.0 361.0,358.9 C 353.7,357.7 346.6,355.5 340.0,353.8 C 333.4,352.1 327.4,349.9 321.2,348.6 C 315.0,347.3 309.3,346.3 303.0,345.7 C 296.6,345.2 290.1,345.4 283.0,345.3 C 276.0,345.2 268.2,345.7 260.7,345.2 C 253.1,344.7 245.0,344.1 237.9,342.5 C 230.8,340.9 223.8,338.5 218.1,335.6 C 212.4,332.7 207.6,328.8 203.6,324.9 C 199.6,321.0 196.8,316.5 194.3,312.2 C 191.8,307.8 190.0,303.3 188.4,298.9 C 186.7,294.6 185.3,290.2 184.3,285.9 C 183.2,281.5 182.4,277.2 182.3,272.9 C 182.2,268.6 182.6,264.2 183.7,260.0 C 184.9,255.8 187.0,251.7 189.1,247.7 C 191.3,243.7 194.4,240.0 196.8,236.2 C 199.3,232.4 201.9,228.9 203.9,225.0 C 205.9,221.2 207.3,217.3 208.7,213.0 C 210.2,208.8 211.0,204.1 212.8,199.5 C 214.6,194.9 216.3,189.7 219.6,185.4 C 222.9,181.0 227.1,176.5 232.5,173.1 C 237.9,169.8 244.8,167.1 251.9,165.4 C 259.0,163.7 267.3,163.1 275.1,162.9 C 282.9,162.7 291.1,163.5 298.6,164.1 C 306.1,164.7 313.2,165.9 320.1,166.5 C 327.0,167.1 333.4,167.5 340.0,167.8 C 346.6,168.0 352.9,167.9 359.5,168.0 C 366.1,168.2 372.8,168.1 379.5,168.6 C 386.1,169.1 392.9,169.9 399.4,171.0 C 406.0,172.2 412.4,173.8 418.6,175.5 C 424.9,177.3 431.0,179.4 437.2,181.5 C 443.3,183.6 449.5,185.8 455.7,188.3 C 461.8,190.7 468.3,193.2 474.0,196.2 C 479.8,199.2 485.7,202.5 490.1,206.3 C 494.5,210.0 498.3,214.4 500.3,218.8 C 502.3,223.3 502.8,228.3 502.2,233.0 C 501.7,237.8 499.4,242.7 496.8,247.2 C 494.3,251.7 488.8,255.9 486.8,260.0 Z" />
+  </svg>
+  <div class="hero__scrim"></div>
+
+  <div class="row hero__inner">
+    <div class="hero__coords"><span class="pulse"></span> 47.4979° N · 19.0402° E — Budapest, Hungary</div>
+    <h1>Nagy Tamás</h1>
+    <p class="hero__role">Software Engineer — Aspiring Game Developer</p>
+    <p class="hero__text">I am an outgoing and ambitious person who enjoys taking on new challenges and continuously pushing myself to grow. Outside of my professional interests, I enjoy staying active through hiking, mountain climbing, and indoor bouldering. I also have a passion for reading and video games, which allow me to explore new ideas and perspectives. Spending quality time with my family and friends is also an important part of my life.</p>
+    <div class="hero__ctas">
+      <a href="#contact" class="btn">Get in touch <span class="btn__arrow">→</span></a>
+      <a href="#work" class="btn btn--ghost">View work</a>
     </div>
-    <div class="header__text-box row">
-      <div class="header__text">
-        <h1 class="heading-primary">
-          <!-- Replace the following name with your name -->
-          <span>Nagy Tamás</span>
-        </h1>
-        <!-- Put a small paragraph about yourself -->
-        <p>I am an outgoing and ambitious person who enjoys taking on new challenges and continuously pushing myself to grow. Outside of my professional interests, I enjoy staying active through hiking, mountain climbing, and indoor bouldering. I also have a passion for reading and video games, which allow me to explore new ideas and perspectives. Spending quality time with my family and friends is also an important part of my life. I value meaningful relationships, teamwork, and new experiences, and I believe these interests help me maintain a balanced and open-minded approach both personally and professionally.</p>
-        <a href="#contact" class="btn btn--pink">Get in touch</a>
-      </div>
-    </div>
-  </header>
+  </div>
 
-  <main role="main">
+  <div class="scroll-cue"><span class="scroll-cue__line"></span> Scroll</div>
+</header>
 
-    <!-- ***** Work ***** -->
+<main role="main">
 
-    <section class="work" id="work">
-      <div class="row">
-        <h2>My Work</h2>
-        <div class="work__boxes">
-
-          <!-- Each div with the work__box class is a project. -->
-
-          <div class="work__box">
-            <div class="work__text">
-              <h3>Portfolio Template</h3>
-              <p>
-                A free Open Source Portfolio for anyone to use for free.
-              </p>
-              <ul class="work__list">
-                <li>HTML</li>
-                <li>SCSS</li>
-                <li>JavaScript</li>
-                <li>Parcel</li>
-              </ul>
-
-              <div class="work__links">
-                <a href="https://nisar.surge.sh" target="_blank" class="link__text">
-                  Visit Site <span>&rarr;</span>
-                </a>
-                <a href="https://github.com/nisarhassan12/portfolio" title="View Source Code" target="_blank">
-                  <img src="./images/github.svg" class="work__code" alt="GitHub">
-                </a>
-              </div>
-            </div>
-            <div class="work__image-box">
-              <img src="./images/project-1.png" class="work__image" alt="Project 1" />
-            </div>
-          </div>
-
-          <div class="work__box">
-            <div class="work__text">
-              <h3>Calculator</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod,
-                eius.
-              </p>
-              <ul class="work__list">
-                <li>React</li>
-                <li>Next.js</li>
-                <li>Node</li>
-                <li>MongoDB</li>
-              </ul>
-
-              <div class="work__links">
-                <a href="#" class="link__text">
-                  Visit Site <span>&rarr;</span>
-                </a>
-                <a href="#">
-                  <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
-                </a>
-              </div>
-            </div>
-            <div class="work__image-box">
-              <img src="./images/project-2.png" class="work__image" alt="Project 1" />
-            </div>
-          </div>
-
-          <div class="work__box">
-            <div class="work__text">
-              <h3>Notificator</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod,
-                eius.
-              </p>
-              <ul class="work__list">
-                <li>React</li>
-                <li>Next.js</li>
-                <li>Node</li>
-                <li>MongoDB</li>
-              </ul>
-
-              <div class="work__links">
-                <a href="#" class="link__text">
-                  Visit Site <span>&rarr;</span>
-                </a>
-                <a href="#">
-                  <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
-                </a>
-              </div>
-            </div>
-            <div class="work__image-box">
-              <img src="./images/project-3.png" class="work__image" alt="Project 3" />
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ***** Clients ***** -->
-
-    <section class="client" id="clients">
-      <div class="row">
-        <h2>Clients</h2>
-        <div class="client__logos">
-          <!-- Add logos of the clients or companies you'have worked with. -->
-          <img src="./images/ronjones.png" class="client__logo" alt="Company 2" />
-          <img src="./images/goldengrid.png" class="client__logo" alt="Company 3" />
-          <img src="./images/bullseye.png" class="client__logo" alt="Company 1" />
-          <img src="./images/mighty-furnitures.png" class="client__logo" alt="Company 1" />
-          <img src="./images/fastlane.png" class="client__logo" alt="Company 3" />
-          <img src="./images/chippy.png" class="client__logo" alt="Company 1" />
-        </div>
-      </div>
-    </section>
-
-    <!-- ***** About ***** -->
-
-    <section class="about" id="about">
-      <div class="row">
-        <h2>About Me</h2>
-        <div class="about__content">
-          <div class="about__text">
-            <!-- Replace the below paragraph with info about yourself -->
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos id
-              nostrum illo harum blanditiis, tenetur eum suscipit cupiditate
-              in vel, ex quam quidem quos mollitia labore aut sunt eius
-              ratione molestiae fuga veniam facere similique voluptate.
-            </p>
-            <!-- Provide a link to your resume -->
-            <a href="#" class="btn">My Resume</a>
-          </div>
-
-          <div class="about__photo-container">
-            <!-- Add a nice photo of yourself -->
-            <img class="about__photo" src="./images/syed-ali-hussnain.jpg" alt="" />
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <!-- ***** Contact ***** -->
-
-  <section class="contact" id="contact">
+  <!-- ***** Work ***** -->
+  <section class="work" id="work">
     <div class="row">
-      <h2>Get in Touch</h2>
-      <div class="contact__info">
-        <p>
-          Are you looking for a fast-performing and user-friendly website to
-          represent your product or business? or looking for any kind of
-          consultation? or want to ask questions? or have some advice for me
-          or just want to say "Hi 👋" in any case feel free to Let me know. I
-          will do my best to respond back. 😊 The quickest way to reach out to
-          me is via an email.
-        </p>
-        <!-- Replace the email with yours -->
-        <a href="mailto:you@example.com" class="btn">you@example.com</a>
+      <span class="eyebrow reveal">Selected Work</span>
+      <h2 class="section-title reveal">Three sites I've spent the most time surveying.</h2>
+
+      <div class="site reveal">
+        <div class="site__meta">
+          <span class="site__tag">MSc Thesis · UE5 / C++</span>
+          <div class="site__coord">
+            <span><b>Terrain:</b> Tile-streamed, procedural</span>
+            <span><b>Status:</b> In progress</span>
+          </div>
+        </div>
+        <div>
+          <h3 class="site__title">Procedural Terrain Generation in Unreal Engine 5</h3>
+          <p class="site__desc">A tile-based streaming terrain system built in UE5 C++. Heightmaps are generated from layered fBm and ridge noise, roads are flattened into the landscape with spline-based blending, and tiles stream in asynchronously so the world builds itself without stalling the player.</p>
+          <ul class="site__stack">
+            <li>C++</li>
+            <li>Unreal Engine 5</li>
+            <li>UProceduralMeshComponent</li>
+            <li>Async Tile Streaming</li>
+            <li>HISM Foliage</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="site reveal">
+        <div class="site__meta">
+          <span class="site__tag">Data Engineering · Pipeline</span>
+          <div class="site__coord">
+            <span><b>Source:</b> Open-Meteo API + CSV</span>
+            <span><b>Status:</b> Delivered</span>
+          </div>
+        </div>
+        <div>
+          <h3 class="site__title">End-to-End Weather Data Pipeline</h3>
+          <p class="site__desc">A fully containerized analytics pipeline: raw weather data lands in object storage, gets orchestrated through scheduled workflows, transformed into clean models, and surfaces on dashboards ready for exploration.</p>
+          <ul class="site__stack">
+            <li>Docker</li>
+            <li>Airflow</li>
+            <li>MinIO</li>
+            <li>DuckDB</li>
+            <li>dbt</li>
+            <li>Metabase</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="site reveal">
+        <div class="site__meta">
+          <span class="site__tag">Community Platform · 2025</span>
+          <div class="site__coord">
+            <span><b>Team:</b> 2 developers</span>
+            <span><b>Status:</b> Live</span>
+          </div>
+        </div>
+        <div>
+          <h3 class="site__title">IÖCS Instructor Training</h3>
+          <p class="site__desc">Recruitment and onboarding site for Semmelweis University's instructor community — a countdown-driven landing page, an application flow, and group and contact directories, built to bring in new instructor candidates each semester.</p>
+          <ul class="site__stack">
+            <li>Next.js</li>
+            <li>React</li>
+          </ul>
+          <a href="https://kepzes.iocs.hu" target="_blank" rel="noopener" class="site__link">Visit kepzes.iocs.hu <span class="btn__arrow">→</span></a>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- ***** Footer ***** -->
-
-  <footer role="contentinfo" class="footer">
+  <!-- ***** About ***** -->
+  <section class="about" id="about">
     <div class="row">
-      <!-- Update the links to point to your accounts -->
-      <ul class="footer__social-links">
-        <li class="footer__social-link-item">
-          <a href="https://twitter.com/nisarhassan12/" title="Link to Twitter Profile">
-            <img src="./images/twitter.svg" class="footer__social-image" alt="Twitter">
-          </a>
-        </li>
-        <li class="footer__social-link-item">
-          <a href="https://github.com/nisarhassan12/" title="Link to Github Profile">
-            <img src="./images/github.svg" class="footer__social-image" alt="Github">
-          </a>
-        </li>
-        <li class="footer__social-link-item">
-          <a href="https://codepen.io/nisar_hassan" title="Link to Codepen Profile">
-            <img src="./images/codepen.svg" class="footer__social-image" alt="Codepen">
-          </a>
-        </li>
-        <li class="footer__social-link-item">
-          <a href=https://www.linkedin.com/in/nisar-hassan-naqvi-413466199/">
-            <img src="./images/linkedin.svg" title="Link to Linkedin Profile" class="footer__social-image" alt="Linkedin">
-          </a>
-        </li>
-      </ul>
+      <span class="eyebrow reveal">Field Notes</span>
+      <h2 class="section-title reveal">About Me</h2>
 
-      <!-- If you give me some credit by keeping the below paragraph, will be huge for me 😊 Thanks. -->
-      <p>
-        &copy; 2020 - Template designed & developed by <a href="https://nisar.dev" class="link">Nisar</a>.
-      </p>
-      <div class="footer__github-buttons">
-        <iframe
-          src="https://ghbtns.com/github-btn.html?user=nisarhassan12&repo=portfolio-template&type=watch&count=true"
-          frameborder="0" scrolling="0" width="170" height="20" title="Watch Portfolio Template on GitHub">
-        </iframe>
+      <div class="about__grid">
+        <div class="about__text reveal">
+          <p>I am an outgoing and ambitious person who enjoys taking on new challenges and continuously pushing myself to grow. Outside of my professional interests, I enjoy staying active through hiking, mountain climbing, and indoor bouldering.</p>
+          <p>I also have a passion for reading and video games, which allow me to explore new ideas and perspectives. Spending quality time with my family and friends is also an important part of my life — I value meaningful relationships, teamwork, and new experiences, and I believe these interests help me maintain a balanced and open-minded approach both personally and professionally.</p>
+          <a href="#" class="btn about__resume">My Résumé <span class="btn__arrow">→</span></a>
+        </div>
+
+        <div class="about__panel reveal">
+          <svg viewBox="0 0 400 260" aria-hidden="true">
+            <path d="M0,200 L60,140 L100,175 L150,90 L200,150 L240,110 L290,170 L340,120 L400,180 L400,260 L0,260 Z" fill="var(--bg-panel)" stroke="var(--contour)" stroke-width="1"/>
+            <path d="M0,220 L50,175 L110,205 L160,150 L210,195 L260,160 L310,205 L360,170 L400,210 L400,260 L0,260 Z" fill="none" stroke="var(--contour-soft)" stroke-width="1"/>
+            <circle cx="150" cy="90" r="3" fill="var(--accent)"/>
+            <line x1="150" y1="20" x2="150" y2="90" stroke="var(--accent-dim)" stroke-width="1" stroke-dasharray="2 4"/>
+            <text x="154" y="30" fill="var(--accent)" font-family="IBM Plex Mono, monospace" font-size="10">1247m</text>
+          </svg>
+          <div class="about__panel-cap">
+            <span>Kékes, Mátra Hills</span>
+            <span><b>Base camp:</b> Budapest</span>
+          </div>
+        </div>
       </div>
     </div>
-  </footer>
+  </section>
 
-  <a href="#top" class="back-to-top" title="Back to Top">
-    <img src="./images/arrow-up.svg" alt="Back to Top" class="back-to-top__image"/>
-  </a>
-  <script src="./index.js"></script>
+  <!-- ***** Contact ***** -->
+  <section class="contact" id="contact">
+    <div class="row">
+      <span class="eyebrow reveal">Get In Touch</span>
+      <h2 class="section-title reveal">Let's build something.</h2>
+
+      <div class="contact__grid">
+        <div class="reveal">
+          <p class="contact__text">Looking for a software engineer, want to talk through a game or terrain-generation idea, or just want to say hi? The quickest way to reach me is by email — I'll do my best to get back to you.</p>
+          <a href="mailto:you@example.com" class="contact__email">you@example.com</a>
+        </div>
+
+        <div class="legend reveal">
+          <div class="legend__title">Index</div>
+          <div class="legend__row"><span>Based in</span><span>Budapest, HU</span></div>
+          <div class="legend__row"><span>Studying</span><span>MSc, BME</span></div>
+          <div class="legend__row"><span>Focus</span><span>Software &amp; 3D</span></div>
+          <div class="legend__row"><span>Email</span><a href="mailto:you@example.com"><span>you@example.com</span></a></div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="row" style="display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:1.6rem; width:100%;">
+    <span>© 2026 Nagy Tamás</span>
+    <ul class="footer__social">
+      <li>
+        <a href="#" title="GitHub" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5a11.5 11.5 0 0 0-3.64 22.42c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.36-3.88-1.36-.53-1.33-1.29-1.69-1.29-1.69-1.05-.72.08-.7.08-.7 1.17.08 1.78 1.2 1.78 1.2 1.03 1.77 2.71 1.26 3.37.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11.1 11.1 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.64 1.59.24 2.76.12 3.05.74.81 1.19 1.83 1.19 3.09 0 4.41-2.7 5.39-5.26 5.67.42.36.78 1.07.78 2.17v3.22c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5Z"/></svg>
+        </a>
+      </li>
+      <li>
+        <a href="#" title="LinkedIn" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.03-1.85-3.03-1.85 0-2.14 1.45-2.14 2.94v5.66H9.36V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM7.12 20.45H3.56V9h3.56v11.45Z"/></svg>
+        </a>
+      </li>
+      <li>
+        <a href="mailto:you@example.com" title="Email" aria-label="Email">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 6h18v12H3z"/><path d="m3 7 9 6 9-6"/></svg>
+        </a>
+      </li>
+    </ul>
+  </div>
+</footer>
+
+<a href="#top" class="back-to-top" title="Back to Top" id="backToTop" aria-label="Back to top">
+  <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+</a>
+
+<script src="js/main.js"></script>
 </body>
-
 </html>
